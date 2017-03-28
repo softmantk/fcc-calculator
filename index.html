@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soft Calculator</title>
+    <link rel="stylesheet" href="external/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-app="calculator">
+
+    <div class="container calc-container" ng-controller="calCtrl">
+
+        <div class="calc-display">
+                {{current}}
+        </div>
+
+        <table class="calc-btns">
+            <tr class="btn-row">
+                <td class="calc-btn">&larr;</td>
+                <td class="calc-btn">CE</td>
+                <td class="calc-btn">C</td>
+                <td class="calc-btn">&plusmn;</td>
+                <td class="calc-btn">&radic;</td>
+            </tr>
+
+            <tr class="btn-row">
+                <td class="calc-btn">7</td>
+                <td class="calc-btn">8</td>
+                <td class="calc-btn">9</td>
+                <td class="calc-btn">/</td>
+                <td class="calc-btn">%</td>
+            </tr>
+            <tr class="btn-row">
+                <td class="calc-btn">4</td>
+                <td class="calc-btn">5</td>
+                <td class="calc-btn">6</td>
+                <td class="calc-btn">*</td>
+                <td class="calc-btn">1/x</td>
+            </tr>
+
+            <tr class="btn-row">
+                <td class="calc-btn">1</td>
+                <td class="calc-btn">2</td>
+                <td class="calc-btn">3</td>
+                <td class="calc-btn">-</td>
+                <td rowspan="2" class="calc-btn">+</td>
+            </tr>
+            <tr class="btn-row">
+                <td colspan="2" class="calc-btn">0</td>
+                <td class="calc-btn">,</td>
+                <td class="calc-btn">+</td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+
+
+
+    <script src="external/jquery.js"></script>
+    <script src="external/bootstrap.js"></script>
+    <script src="external/angular.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
