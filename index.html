@@ -17,39 +17,39 @@
 
         <table class="calc-btns">
             <tr class="btn-row">
-                <td class="calc-btn">&larr;</td>
-                <td class="calc-btn">CE</td>
-                <td class="calc-btn">C</td>
-                <td class="calc-btn">&plusmn;</td>
-                <td class="calc-btn">&radic;</td>
+                <td class="calc-btn" ng-click="number('back')">&larr;</td>
+                <td class="calc-btn" ng-click="clear()">CE</td>
+                <td class="calc-btn" ng-click="clear()">C</td>
+                <td class="calc-btn" >&plusmn;</td>
+                <td class="calc-btn" ng-click="number('sqrt')">&radic;</td>
             </tr>
 
             <tr class="btn-row">
-                <td class="calc-btn">7</td>
-                <td class="calc-btn">8</td>
-                <td class="calc-btn">9</td>
-                <td class="calc-btn">/</td>
-                <td class="calc-btn">%</td>
+                <td class="calc-btn" ng-click="number(7)">7</td>
+                <td class="calc-btn" ng-click="number(8)">8</td>
+                <td class="calc-btn" ng-click="number(9)">9</td>
+                <td class="calc-btn" ng-click="number('/')">/</td>
+                <td class="calc-btn" ng-click="number('%')">%</td>
             </tr>
             <tr class="btn-row">
-                <td class="calc-btn">4</td>
-                <td class="calc-btn">5</td>
-                <td class="calc-btn">6</td>
-                <td class="calc-btn">*</td>
-                <td class="calc-btn">1/x</td>
+                <td class="calc-btn" ng-click="number(4)">4</td>
+                <td class="calc-btn" ng-click="number(5)">5</td>
+                <td class="calc-btn" ng-click="number(6)">6</td>
+                <td class="calc-btn" ng-click="number('*')">*</td>
+                <td class="calc-btn" ng-click="number('1/x')">1/x</td>
             </tr>
 
             <tr class="btn-row">
-                <td class="calc-btn">1</td>
-                <td class="calc-btn">2</td>
-                <td class="calc-btn">3</td>
-                <td class="calc-btn">-</td>
-                <td rowspan="2" class="calc-btn">+</td>
+                <td class="calc-btn" ng-click="number(1)">1</td>
+                <td class="calc-btn" ng-click="number(2)">2</td>
+                <td class="calc-btn" ng-click="number(3)">3</td>
+                <td class="calc-btn" ng-click="number('-')">-</td>
+                <td rowspan="2" class="calc-btn" ng-click="number('+')">+</td>
             </tr>
             <tr class="btn-row">
-                <td colspan="2" class="calc-btn">0</td>
-                <td class="calc-btn">,</td>
-                <td class="calc-btn">+</td>
+                <td colspan="2" class="calc-btn" ng-click="number(0)">0</td>
+                <td class="calc-btn" ng-click="number('.')">.</td>
+                <td class="calc-btn" ng-click="number('=')">=</td>
             </tr>
 
         </table>
